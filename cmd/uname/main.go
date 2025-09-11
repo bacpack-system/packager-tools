@@ -6,8 +6,6 @@ import (
 	"github.com/akamensky/argparse"
 	"log"
 	"os"
-	"path"
-	"path/filepath"
 	"regexp"
 )
 
@@ -88,14 +86,8 @@ func main() {
 		return
 	}
 
-	ex, err := os.Executable()
-	if err != nil {
-		panic(err)
-	}
-	exPath := filepath.Dir(ex)
-
 	var unameData DataStruct
-	unameData.ReadFromFile(path.Join(exPath, "uname.txt"))
+	unameData.ReadFromFile("/etc/uname.txt")
 
 	if *args.Machine {
 		fmt.Printf("%s\n", unameData.Machine)
