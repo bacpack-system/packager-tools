@@ -24,8 +24,7 @@ Example usage:
 Fake `uname` utility reads data from config file nd
 provide them to the user.
 
-Config file has a name `uname.txt` and must be locatad at the same
-directory as the fake `uname`
+Config file has a name `uname.txt` and must be locatad in the same `/etc` directory.
 
 To generate config file just run **real** `uname` utility as
 
