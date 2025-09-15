@@ -21,10 +21,9 @@ Example usage:
 
 ### Fake uname utility
 
-Fake `uname` utility reads data from config file nd
-provide them to the user.
+Fake `uname` utility reads data from a config file and prints them to the user.
 
-Config file has a name `uname.txt` and must be locatad in the same `/etc` directory.
+The config file is named `uname.txt` and must be located in the `/etc` directory.
 
 To generate config file just run **real** `uname` utility as
 
